@@ -95,7 +95,7 @@ def generate_chatbot_response(user_input):
     
         return robo1_response
 def sms():
-    user_input = request.form['Body']
+    user_input = request.form.get('Body')
     response = generate_chatbot_response(user_input)
 
     twilio_response = MessagingResponse()
