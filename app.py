@@ -114,7 +114,7 @@ def bag_of_words(sentence, words, show_details=True):
             if word == s: 
                 # assign 1 if current word is in the vocabulary position
                 bag[i] = 1
-                if show_details:
+               # if show_details:
                     #print ("found in bag: %s" % word)
     return(np.array(bag))
 def predict_class(sentence):
