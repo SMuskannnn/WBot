@@ -8,6 +8,7 @@ from keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import SGD
 import random
 import nltk
+from nltk import punkt, WordNet
 from nltk.stem import WordNetLemmatizer
 lemmatizer = WordNetLemmatizer()
 import json
